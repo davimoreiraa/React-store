@@ -2,9 +2,31 @@
   height: 80px;
   width: 100vw;
   background-color: rgb(44, 179, 255);
+  padding-right: 13px;
+  padding-left: 13px;
 }
 
-.logo_container {
+.logo_img_container {
   width: 60px;
   height: 60px;
+}
+
+.title {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.cart_btn {
+  background-color: rgb(28, 96, 135);
+  color: #000;
+  width: 90px !important;
+  height: 50px;
+  border: transparent;
+  width: 70px;
+}
+
+.btn_text {
+  font-size: 25px;
+  margin-bottom: 0;
+  margin-left: 7px;
 }

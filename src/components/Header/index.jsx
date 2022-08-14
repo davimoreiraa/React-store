@@ -3,15 +3,24 @@ import styles from './styles.module.css'
 
 /* ------------ COMPONENTS ------------ */
 import Image from 'next/Image'
-import Logo from '../../../public/images/store_icon.png'
 
+/* ------------ IMAGES AND ICONS ------------ */
+import Logo from '../../../public/images/store_icon.png'
+import Cart from '../../../public/images/cart.svg'
 
 export default function Header() {
   return (
-    <header className={`${styles.header}`}>
-      <div className={`${styles.logo_container}`}>
-        <Image src={Logo} layout='responsive' />
-      </div>
+    <header className={`${styles.header} d-flex align-items-center justify-content-between`}>
+      <h1 className={`${styles.title} d-flex align-items-center`}>
+        <div className={`${styles.logo_img_container}`}>
+          <Image src={Logo} layout='responsive' />
+        </div>
+        <h1 className={`${styles.title}`}>React Store</h1> 
+      </h1>
+      <button type="button" className={`${styles.cart_btn} d-flex align-items-center justify-content-between rounded-2`}>
+         <Image src={Cart} layout='intrinsic'/>
+        <p className={styles.btn_text} >Cart</p> 
+      </button>
     </header>
   )
 }
