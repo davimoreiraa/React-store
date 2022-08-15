@@ -15,11 +15,11 @@ export default function Header() {
         <div className={`${styles.logo_img_container}`}>
           <Image src={Logo} layout='responsive' />
         </div>
-        <h1 className={`${styles.title}`}>React Store</h1> 
+        <p className={`${styles.title}`}>React Store</p> 
       </h1>
       <button type="button" className={`${styles.cart_btn} d-flex align-items-center justify-content-between rounded-2`}>
          <Image src={Cart} layout='intrinsic'/>
-        <p className={styles.btn_text} >Cart</p> 
+        <p className={styles.btn_text}>Cart</p> 
       </button>
     </header>
   )
