@@ -2,13 +2,111 @@
   "products": [
     {
       "name": "Mesa",
-      "price": "R$ 500,00",
+      "price": "R$ 100,00",
+      "type": "fitment",
       "id": "1"
     },
     {
-      "name": "Geladeira",
-      "price": "R$ 200,00",
+      "name": "Cama",
+      "price": "R$ 89,98",
+      "type": "fitment",
       "id": "2"
+    },
+    {
+      "name": "Televisão",
+      "price": "R$ 979,99",
+      "type": "eletronics",
+      "id": "3"
+    },
+    {
+      "name": "Computador",
+      "price": "R$ 1579,90",
+      "type": "eletronics",
+      "id": "4"
+    },
+    {
+      "name": "Criado-mudo",
+      "price": "R$ 99,99",
+      "type": "fitment",
+      "id": "5"
+    },
+    {
+      "name": "Geladeira",
+      "price": "R$ 359,99",
+      "type": "eletronics",
+      "id": "6"
+    },
+    {
+      "name": "Teclado",
+      "price": "R$ 70,00",
+      "type": "eletronics",
+      "id": "7"
+    },
+    {
+      "name": "Mouse",
+      "price": "R$ 200,00",
+      "type": "eletronics",
+      "id": "8"
+    },
+    {
+      "name": "Headphone",
+      "price": "R$ 325,00",
+      "type": "eletronics",
+      "id": "9"
+    },
+    {
+      "name": "Fone de ouvido",
+      "price": "R$ 30,00",
+      "type": "eletronics",
+      "id": "10"
+    },
+    {
+      "name": "Cadeira",
+      "price": "R$ 249,95",
+      "type": "fitment",
+      "id": "11"
+    },
+    {
+      "name": "Mousepad",
+      "price": "R$ 10,00",
+      "type": "fitment",
+      "id": "12"
+    },
+    {
+      "name": "Sofá",
+      "price": "R$ 200,10",
+      "type": "fitment",
+      "id": "13"
+    },
+    {
+      "name": "Poltrona",
+      "price": "R$ 119,90",
+      "type": "fitment",
+      "id": "14"
+    },
+    {
+      "name": "Rack",
+      "price": "R$ 200,00",
+      "type": "fitment",
+      "id": "15"
+    },
+    {
+      "name": "Pia",
+      "price": "R$ 100,00",
+      "type": "fitment",
+      "id": "16"
+    },
+    {
+      "name": "Escrivaninha",
+      "price": "R$ 99,90",
+      "type": "fitment",
+      "id": "17"
+    },
+    {
+      "name": "Guarda-roupa",
+      "price": "R$ 259,99",
+      "type": "fitment",
+      "id": "18"
     }
   ],
   "types": ["eletronics", "fitment"]
