@@ -19,9 +19,12 @@ export default function Home() {
         <Header/>
         <main>
           {data.map(product => (
-            <ProductCard  />
+            <ProductCard 
+            key={product.id} 
+            name={product.name} 
+            price={product.price} 
+            type={product.type}/>
           ))}
-        <ProductCard  />
         </main>
       </div>
     </>    
