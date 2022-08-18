@@ -7,7 +7,7 @@ import Image from 'next/Image'
 export default function ProductCard({name }) {
   return (
     <article className={`${styles.card}`}>
-      <h1>{name}</h1>
+      <h1>.....</h1>
     </article>
   )
 }
