@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <div className={`${styles.body}`}>
         <Header/>
-        <main>
+        <main className={`${styles.content}`}>
           {data.map(product => (
             <ProductCard 
             key={product.id} 
