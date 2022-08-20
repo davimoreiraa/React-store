@@ -1,3 +1,10 @@
+:root {
+  /*-------------- PALETA DE CORES ------------------*/
+  --blue: rgb(44, 179, 255);
+  --dark-blue: rgb(28, 96, 135);
+  --grey: rgb(205, 214, 205);
+}
+
 html,
 body {
   padding: 0;

@@ -1,7 +1,7 @@
 .header {
   height: 80px;
   width: 100vw;
-  background-color: rgb(44, 179, 255);
+  background-color: var(--blue);
   padding-right: 13px;
   padding-left: 13px;
 }
@@ -17,7 +17,7 @@
 }
 
 .cart_btn {
-  background-color: rgb(28, 96, 135);
+  background-color: var(--dark-blue) ;
   color: #000;
   width: 90px !important;
   height: 50px;

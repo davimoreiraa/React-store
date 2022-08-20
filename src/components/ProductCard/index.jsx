@@ -6,7 +6,7 @@ import Image from 'next/Image'
 
 export default function ProductCard({name, type, price}) {
   return (
-    <article className={`${styles.card}`}>
+    <article className={`${styles.card} rounded-3`}>
       <h1>{name}</h1>
     </article>
   )
