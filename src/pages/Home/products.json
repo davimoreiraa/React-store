@@ -45,84 +45,84 @@
       "name": "Teclado",
       "price": "R$ 70,00",
       "type": "eletronics",
-      "img": "mesa.jpg",
+      "img": "teclado.jpg",
       "id": "7"
     },
     {
       "name": "Mouse",
       "price": "R$ 200,00",
       "type": "eletronics",
-      "img": "mesa.jpg",
+      "img": "mouse.jpg",
       "id": "8"
     },
     {
       "name": "Headphone",
       "price": "R$ 325,00",
       "type": "eletronics",
-      "img": "mesa.jpg",
+      "img": "headphone.jpg",
       "id": "9"
     },
     {
       "name": "Fone de ouvido",
       "price": "R$ 30,00",
       "type": "eletronics",
-      "img": "mesa.jpg",
+      "img": "fone.png",
       "id": "10"
     },
     {
       "name": "Cadeira",
       "price": "R$ 249,95",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "cadeira.jpg",
       "id": "11"
     },
     {
       "name": "Mousepad",
       "price": "R$ 10,00",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "mousepad.jpg",
       "id": "12"
     },
     {
       "name": "Sofá",
       "price": "R$ 200,10",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "sofa.jpg",
       "id": "13"
     },
     {
       "name": "Poltrona",
       "price": "R$ 119,90",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "poltrona.jpg",
       "id": "14"
     },
     {
       "name": "Rack",
       "price": "R$ 200,00",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "rack.jpg",
       "id": "15"
     },
     {
       "name": "Pia",
       "price": "R$ 100,00",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "pia.jpg",
       "id": "16"
     },
     {
       "name": "Escrivaninha",
       "price": "R$ 99,90",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "escrivaniha.jpg",
       "id": "17"
     },
     {
       "name": "Guarda-roupa",
       "price": "R$ 259,99",
       "type": "fitment",
-      "img": "mesa.jpg",
+      "img": "guarda-roupa.jpg",
       "id": "18"
     }
   ]
