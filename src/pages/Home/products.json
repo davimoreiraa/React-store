@@ -3,6 +3,7 @@
       "name": "Mesa",
       "price": "R$ 100,00",
       "type": "fitment",
+      "img": "/../../../images.mesa.jpg",
       "id": "1"
     },
     {
