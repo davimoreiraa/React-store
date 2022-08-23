@@ -19,7 +19,7 @@ export default function ProductCard({name, type, price, img}) {
             <p className={styles.price}>{price}</p>
           </div>
         <div>
-          <button className={`${styles.cart_btn}`}> <Cart/> </button>
+          <button className={`${styles.cart_btn}`}>  </button>
         </div>
         </div>
     </article>
