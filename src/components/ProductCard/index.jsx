@@ -2,7 +2,7 @@
 import styles from './styles.module.css'
 
 /* ------------ ICONS ------------ */
-import Cart from '../../../public/images/cart.svg'
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 export default function ProductCard({name, type, price, img}) {
   return (
@@ -19,7 +19,7 @@ export default function ProductCard({name, type, price, img}) {
             <p className={styles.price}>{price}</p>
           </div>
         <div>
-          <button className={`${styles.cart_btn}`}>  </button>
+          <button className={`${styles.cart_btn}`}> <AiOutlineShoppingCart/> </button>
         </div>
         </div>
     </article>
