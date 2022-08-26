@@ -12,7 +12,7 @@ export default function ProductCard({name, type, price, img}) {
             <img src={`../../../images/${img}`} className={styles.product_img}/>
           </div>
         </div>
-        <div className={`d-flex`}>
+        <div className={`d-flex justify-content-between`}>
           <div className={`${styles.infos}`}>
             <p className={styles.name}>{name}</p>
             <p className={styles.type}>{type}</p>
