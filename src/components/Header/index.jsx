@@ -3,6 +3,7 @@ import styles from './styles.module.css'
 
 /* ------------ COMPONENTS ------------ */
 import Image from 'next/Image'
+import CartBox from '../CartBox' 
 
 /* ------------ IMAGES AND ICONS ------------ */
 import Logo from '../../../public/images/store_icon.png'
@@ -21,6 +22,7 @@ export default function Header() {
          <Image src={Cart} layout='intrinsic'/>
         <p className={styles.btn_text}>Cart</p> 
       </button>
+      <CartBox />
     </header>
   )
 }
