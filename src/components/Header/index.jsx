@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 
 /* ------------ COMPONENTS ------------ */
 import Image from 'next/Image'
-import CartBox from '../CartBox' 
+import CartBox from '../CartBox'
 
 /* ------------ IMAGES AND ICONS ------------ */
 import Logo from '../../../public/images/store_icon.png'

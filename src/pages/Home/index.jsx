@@ -7,7 +7,7 @@ import ProductCard from '../../components/ProductCard';
 import Head from 'next/head'
 
 /* ------------ DATA ------------ */
-import data from './products.json';
+import data from '../../products.json';
 
 export default function Home() {
   return (
