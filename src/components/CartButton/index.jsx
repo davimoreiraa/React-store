@@ -4,8 +4,11 @@ import styles from './styles.module.css'
 /* ------------ ICONS ------------ */
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
-export default function CartButton() {
+export default function CartButton({ pushProduct, id }) {
   return (
-    <button className={`${styles.cart_btn} rounded-3`}><AiOutlineShoppingCart/></button>
+    <button 
+    className={`${styles.cart_btn} rounded-3`} onClick={() => console.log('a')} >
+      <AiOutlineShoppingCart/>
+    </button>
   )
 }

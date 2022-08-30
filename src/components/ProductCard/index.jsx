@@ -1,10 +1,23 @@
 /* ------------ STYLES ------------ */
 import styles from './styles.module.css'
 
-/* ------------ STYLES ------------ */
+/* ------------ COMPONENTS ------------ */
 import CartButton from '../CartButton'
 
-export default function ProductCard({name, type, price, img}) {
+/* ------------ RESOURCES ------------ */
+import React, { useContext } from "react";
+
+/* ------------ CONTEXT ------------ */
+import Products from '../../Context/Products'
+
+export default function ProductCard({name, type, price, img, id}) {
+  const [products, setProducts] = useContext(Products);
+
+  function pushProduct(productID) {
+    setProducts({...products, productID})
+    console.log('a')
+  }
+
   return (
     <article className={`${styles.card} col-12 col-sm-8 col-md-5 col-xxl-3 rounded-3`}>
         <div className={`d-flex justify-content-center`}>
@@ -19,7 +32,7 @@ export default function ProductCard({name, type, price, img}) {
             <p className={styles.price}>{price}</p>
           </div>
         <div>
-          <CartButton />
+          <CartButton pushProduct={pushProduct} id={id}/>
         </div>
         </div>
     </article>
