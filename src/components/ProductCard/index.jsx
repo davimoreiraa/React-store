@@ -14,7 +14,8 @@ export default function ProductCard({name, type, price, img, id}) {
   const [products, setProducts] = useContext(Products);
 
   function pushProduct(productID) {
-    setProducts({...products, productID})
+    if(products.includes(productID) == true) return
+    setProducts([...products, productID])
     console.log('a')
   }
 
