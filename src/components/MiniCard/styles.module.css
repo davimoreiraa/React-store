@@ -1,6 +1,12 @@
+.mini_card {
+  margin: 8px auto;
+  background-color: #fff;
+}
+
 .img_container {
   width: 70px;
   height: 70px;
+  margin-left: 5px;
 }
 
 .product_infos {
@@ -15,4 +21,8 @@
   color: #f00;
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+.trash_icon {
+  margin: auto 10px auto 10px;
 }
