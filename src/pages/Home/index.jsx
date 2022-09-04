@@ -21,7 +21,6 @@ export default function Home() {
   function pushProduct(productID) {
     if(products.includes(productID) == true) return
     setProducts([...products, productID])
-    console.log(products)
   }
 
   return (
