@@ -10,23 +10,9 @@ import { useContext, useEffect } from "react";
 /* ------------ CONTEXT ------------ */
 import Products from '../../Context/Products'
 
-
-
-export default function MiniCard({ product }) {
+export default function MiniCard({ product, removeProduct }) {
   const [products, setProducts] = useContext(Products);
-
-  function removeProduct(id) {
-    let newProductsArray = products
-    for(var i = 0; i < products.length; i++) { 
-      console.log(products[i])
-      if(products[i].id === id) { 
-        newProductsArray.splice(i, 1); 
-      }
-    }
-    setProducts(newProductsArray)
-  }
   
-
   return (
     <div className={`${styles.mini_card} d-flex rounded-3 border align-items-center justify-content-between`}>
       <div className={`${styles.img_container} d-flex justify-content-center `}>

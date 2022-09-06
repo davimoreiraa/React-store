@@ -9,7 +9,7 @@ import CartBox from '../CartBox'
 import Logo from '../../../public/images/store_icon.png'
 import Cart from '../../../public/images/cart.svg'
 
-export default function Header() {
+export default function Header({ removeProduct }) {
   return (
     <header className={`${styles.header} d-flex align-items-center justify-content-between`}>
       <h1 className={`${styles.title} d-flex align-items-center`}>
@@ -22,7 +22,7 @@ export default function Header() {
          <Image src={Cart} layout='intrinsic'/>
         <p className={styles.btn_text}>Cart</p> 
       </button>
-      <CartBox />
+      <CartBox removeProduct={removeProduct}/>
     </header>
   )
 }

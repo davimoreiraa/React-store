@@ -23,13 +23,24 @@ export default function Home() {
     setProducts([...products, productID])
   }
 
+  function removeProduct(id) {
+    let newProductsArray = products
+    for(var i = 0; i < products.length; i++) { 
+      console.log(products[i])
+      if(products[i].id === id) { 
+        newProductsArray.splice(i, 1); 
+      }
+    }
+    setProducts(newProductsArray)
+  }
+
   return (
     <div>
       <Head>
         <title>React Store</title>
       </Head>
       <div className={`${styles.body}`}>
-        <Header/>
+        <Header removeProduct={removeProduct}/>
         <main className={`${styles.content} d-flex justify-content-center`}>
           <div className={`${styles.products_container} d-flex justify-content-center col-11 gap-3 row row-cols-md-2 row-cols-lg-3`}>
             {data.map(product => (
