@@ -18,20 +18,20 @@ import Products from '../../Context/Products'
 export default function Home() {
   const [products, setProducts] = useContext(Products);
   
-  function pushProduct(productID) {
-    if(products.includes(productID) == true) return
-    setProducts([...products, productID])
+  function pushProduct(product) {
+    if(products.includes(product) == true) return
+    setProducts([...products, product])
   }
 
   function removeProduct(id) {
     let newProductsArray = products
     for(var i = 0; i < products.length; i++) { 
-      console.log(products[i])
       if(products[i].id === id) { 
         newProductsArray.splice(i, 1); 
       }
     }
     setProducts(newProductsArray)
+    console.log(products)
   }
 
   return (

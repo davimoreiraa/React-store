@@ -11,8 +11,13 @@ import { useContext, useEffect } from "react";
 import Products from '../../Context/Products'
 
 export default function MiniCard({ product, removeProduct }) {
-  const [products, setProducts] = useContext(Products);
+  let [products, setProducts] = useContext(Products);
   
+	useEffect(() => {
+    setProducts(products);
+  }, [products])
+
+
   return (
     <div className={`${styles.mini_card} d-flex rounded-3 border align-items-center justify-content-between`}>
       <div className={`${styles.img_container} d-flex justify-content-center `}>

@@ -13,7 +13,7 @@ import Products from '../../Context/Products'
 
 export default function CartBox({ removeProduct }) {
   const [products, setProducts] = useContext(Products);
- 
+
   return (
     <div className={`${styles.card_box} position-absolute end-0 col-3 d-flex justify-content-center`}>
       <div className={`col-12`}>
