@@ -15,17 +15,11 @@ export default function CartBox() {
   
   function removeProduct(id) {
     let newProductsArray = [...products]
-    let a = newProductsArray.find(product => {
-      console.log(id, product)
-      return product.id == id
+    let searchProduct = newProductsArray.findIndex(product => {
+      return product.id === id
     })
-    console.log(a)
-    // for(var i = 0; i < products.length; i++) { 
-    //   if(products[i].id === id) { 
-    //     newProductsArray.splice(i, 1); 
-    //   }
-    // }
-   setProducts(newProductsArray)
+    newProductsArray.splice(searchProduct, 1)
+    setProducts(newProductsArray)
  }
 
   return (
