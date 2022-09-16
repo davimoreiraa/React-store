@@ -1,3 +1,23 @@
 .card_box {
   top: 120px;
+  
+}
+
+.total_price_box {
+  background-color: var(--blue);
+  padding: 5px;
+}
+
+/* --------------- MEDIA QUERY --------------*/
+
+@media only screen and (min-width: 768px) {
+  .card_box {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card_box {
+    padding: 15px;
+  }
 }
