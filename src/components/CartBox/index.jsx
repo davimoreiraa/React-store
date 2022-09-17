@@ -5,13 +5,27 @@ import styles from './styles.module.css'
 import MiniCard from '../MiniCard'
 
 /* ------------ RESOURCES ------------ */
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 /* ------------ CONTEXT ------------ */
 import Products from '../../Context/Products'
 
 export default function CartBox({ showCart }) {
   const [products, setProducts] = useContext(Products);
+  const [totalPrice, seTotalPrice] = useState(0);
+
+  useEffect(() => {
+    updatePrice()
+	}, [products])
+
+  function updatePrice() {
+    let price = 0
+    products.forEach(product => {
+      price =+ product.price
+      console.log(product.price)
+    })
+    seTotalPrice(price)
+  }
   
   function removeProduct(id) {
     let newProductsArray = [...products]
@@ -29,7 +43,7 @@ export default function CartBox({ showCart }) {
           <MiniCard key={product.id} product={product} removeProduct={removeProduct}/>
         ))}
         <div className={`${styles.total_price_box} rounded-3 d-flex justify-content-center`}>
-          Total: R$ 99999999
+          Total: R$ {totalPrice}
         </div>
       </div>
     </div>
