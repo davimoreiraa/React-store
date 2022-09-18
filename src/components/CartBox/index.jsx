@@ -12,7 +12,7 @@ import Products from '../../Context/Products'
 
 export default function CartBox({ showCart }) {
   const [products, setProducts] = useContext(Products);
-  const [totalPrice, seTotalPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     updatePrice()
@@ -21,10 +21,10 @@ export default function CartBox({ showCart }) {
   function updatePrice() {
     let price = 0
     products.forEach(product => {
-      price =+ product.price
+      price += product.price
       console.log(product.price)
     })
-    seTotalPrice(price)
+    setTotalPrice(price)
   }
   
   function removeProduct(id) {

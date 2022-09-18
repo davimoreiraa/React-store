@@ -20,7 +20,7 @@ export default function MiniCard({ product, removeProduct }) {
       </div>
       <div className={`${styles.product_infos} `}>
         <h1 className={`${styles.product_name} `}>{product.name}</h1>
-        <p className={`${styles.price}`}>{product.price}</p>
+        <p className={`${styles.price}`}>R$ {product.price}</p>
       </div>
       <button className={`btn`} onClick={() => removeProduct(product.id)}>
         <i className={`${styles.trash_icon} align-self-end`}><BsFillTrashFill /></i>
