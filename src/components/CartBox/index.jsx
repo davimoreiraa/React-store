@@ -43,7 +43,7 @@ export default function CartBox({ showCart }) {
           <MiniCard key={product.id} product={product} removeProduct={removeProduct}/>
         ))}
         <div className={`${styles.total_price_box} rounded-3 d-flex justify-content-center`}>
-          Total: R$ {totalPrice}
+          Total: R$ {totalPrice.toFixed(2)}
         </div>
       </div>
     </div>

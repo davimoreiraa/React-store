@@ -16,7 +16,7 @@ export default function ProductCard({product, pushProduct}) {
           <div className={`${styles.infos}`}>
             <p className={styles.name}>{product.name}</p>
             <p className={styles.type}>{product.type}</p>
-            <p className={styles.price}>R$ {product.price}</p>
+            <p className={styles.price}>R$ {product.price.toFixed(2).toString()}</p>
           </div>
         <div>
           <CartButton product={product} pushProduct={pushProduct}/>

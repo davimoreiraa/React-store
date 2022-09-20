@@ -4,14 +4,7 @@ import styles from './styles.module.css'
 /* ------------ ICONS ------------ */
 import { BsFillTrashFill } from 'react-icons/bs';
 
-/* ------------ RESOURCES ------------ */
-import { useContext } from "react";
-
-/* ------------ CONTEXT ------------ */
-import Products from '../../Context/Products'
-
 export default function MiniCard({ product, removeProduct }) {
-  let [products, setProducts] = useContext(Products);
 
   return (
     <div className={`${styles.mini_card} d-flex rounded-3 border align-items-center justify-content-between`}>
@@ -20,7 +13,7 @@ export default function MiniCard({ product, removeProduct }) {
       </div>
       <div className={`${styles.product_infos} `}>
         <h1 className={`${styles.product_name} `}>{product.name}</h1>
-        <p className={`${styles.price}`}>R$ {product.price}</p>
+        <p className={`${styles.price}`}>R$ {product.price.toFixed(2)}</p>
       </div>
       <button className={`btn`} onClick={() => removeProduct(product.id)}>
         <i className={`${styles.trash_icon} align-self-end`}><BsFillTrashFill /></i>

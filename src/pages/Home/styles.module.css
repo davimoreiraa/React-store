@@ -1,6 +1,7 @@
 .body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
+  background-color: var(--dark-blue);
 }
 
 .content {
