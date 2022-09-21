@@ -3,6 +3,7 @@ import styles from './styles.module.css'
 
 /* ------------ COMPONENTS ------------ */
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import ProductCard from '../../components/ProductCard';
 import Head from 'next/head'
 
@@ -41,6 +42,7 @@ export default function Home() {
             ))}
           </div>
         </main>
+        <Footer />
       </div>
     </div>    
   )

@@ -25,7 +25,7 @@ export default function Header() {
       </h1>
       <button
        type="button" 
-       className={`${styles.cart_btn} d-flex align-items-center justify-content-between rounded-2`}
+       className={`${styles.cart_btn} ${showCart ? styles.enabled : '' } d-flex align-items-center justify-content-between rounded-2`}
        onClick={() => setShowCart(!showCart)}
        >
         <Image src={Cart} layout='intrinsic'/>

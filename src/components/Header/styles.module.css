@@ -24,6 +24,10 @@
   width: 70px;
 }
 
+.enabled {
+  background-color: #000;
+}
+
 .btn_text {
   font-size: 25px;
   margin-bottom: 0;
