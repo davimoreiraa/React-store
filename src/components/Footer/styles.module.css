@@ -13,3 +13,12 @@
   margin-bottom: 0;
   margin-left: 8px;
 }
+
+
+/* --------------- MEDIA QUERY --------------*/
+
+@media only screen and (min-width: 992px) {
+  .nav_item {
+    margin-left: 10px;
+  }
+}
