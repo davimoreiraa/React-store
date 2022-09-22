@@ -36,9 +36,20 @@ export default function CartBox({ showCart }) {
     setProducts(newProductsArray)
  }
 
+ function isCartEmpty() {
+  if (products.length == 0) {
+    return (
+      <div className={`${styles.cart_message} rounded-3 d-flex justify-content-center`}>
+        <p className={`${styles.margin_bt_0}`}>Você não possui itens no carrinho</p>
+      </div>
+    ) 
+  }
+ }
+
   return (
     <div className={`${styles.card_box} ${showCart ? '' : 'd-none'} position-fixed end-0 col-12 col-md-4 col-xl-3 d-flex justify-content-center`}>
       <div className={`col-12`}>
+        {isCartEmpty()}
         {products.map((product) => (
           <MiniCard key={product.id} product={product} removeProduct={removeProduct}/>
         ))}
