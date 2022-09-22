@@ -1,6 +1,5 @@
 .card_box {
   top: 120px;
-  
 }
 
 .total_price_box {
@@ -8,8 +7,12 @@
   padding: 5px;
 }
 
-.cart_message {
+.container { 
   background-color: #fff;
+  padding: 10px;
+}
+
+.cart_message {
   margin-bottom: 0.5em;
   padding: 3px;
 }

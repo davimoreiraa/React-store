@@ -48,7 +48,7 @@ export default function CartBox({ showCart }) {
 
   return (
     <div className={`${styles.card_box} ${showCart ? '' : 'd-none'} position-fixed end-0 col-12 col-md-4 col-xl-3 d-flex justify-content-center`}>
-      <div className={`col-12`}>
+      <div className={`${styles.container} col-12 rounded-2`}>
         {isCartEmpty()}
         {products.map((product) => (
           <MiniCard key={product.id} product={product} removeProduct={removeProduct}/>
