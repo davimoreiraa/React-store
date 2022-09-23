@@ -8,19 +8,19 @@ import MiniCard from '../MiniCard'
 import { useContext, useEffect, useState } from "react";
 
 /* ------------ CONTEXT ------------ */
-import Products from '../../Context/Products'
+import Cart from '../../Context/Cart'
 
 export default function CartBox({ showCart }) {
-  const [products, setProducts] = useContext(Products);
+  const [cart, setCart] = useContext(Cart);
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     updatePrice()
-	}, [products])
+	}, [cart])
 
   function updatePrice() {
     let price = 0
-    products.forEach(product => {
+    cart.forEach(product => {
       price += product.price
       console.log(product.price)
     })
@@ -28,16 +28,16 @@ export default function CartBox({ showCart }) {
   }
   
   function removeProduct(id) {
-    let newProductsArray = [...products]
-    let searchProduct = newProductsArray.findIndex(product => {
+    let newCartArray = [...cart]
+    let searchCart = newCartArray.findIndex(product => {
       return product.id === id
     })
-    newProductsArray.splice(searchProduct, 1)
-    setProducts(newProductsArray)
+    newCartArray.splice(searchCart, 1)
+    setCart(newCartArray)
  }
 
  function isCartEmpty() {
-  if (products.length == 0) {
+  if (cart.length == 0) {
     return (
       <div className={`${styles.cart_message} rounded-3 d-flex justify-content-center`}>
         <p className={`${styles.margin_bt_0}`}>Você não possui itens no carrinho</p>
@@ -50,7 +50,7 @@ export default function CartBox({ showCart }) {
     <div className={`${styles.card_box} ${showCart ? '' : 'd-none'} position-fixed end-0 col-12 col-md-4 col-xl-3 d-flex justify-content-center`}>
       <div className={`${styles.container} col-12 rounded-2`}>
         {isCartEmpty()}
-        {products.map((product) => (
+        {cart.map((product) => (
           <MiniCard key={product.id} product={product} removeProduct={removeProduct}/>
         ))}
         <div className={`${styles.total_price_box} rounded-3 d-flex justify-content-center`}>

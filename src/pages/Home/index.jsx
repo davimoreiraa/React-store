@@ -14,14 +14,14 @@ import data from '../../products.json';
 import { useContext } from "react";
 
 /* ------------ CONTEXT ------------ */
-import Products from '../../Context/Products'
+import Cart from '../../Context/Cart'
 
 export default function Home() {
-  const [products, setProducts] = useContext(Products);
+  const [cart, setCart] = useContext(Cart);
   
   function pushProduct(product) {
-    if(products.includes(product) == true) return
-    setProducts([...products, product])
+    if(cart.includes(product) == true) return
+    setCart([...cart, product])
   }
 
   return (

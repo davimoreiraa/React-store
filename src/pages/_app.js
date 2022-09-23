@@ -3,16 +3,16 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 /* ------------ RESOURCES ------------ */
-import Products from '../Context/Products'
+import Cart from '../Context/Cart'
 import { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
-  const [products, setProducts] = useState([])
+  const [cart, setCart] = useState([])
 
   return (
-    <Products.Provider value={[products, setProducts]}>
+    <Cart.Provider value={[cart, setCart]}>
       <Component {...pageProps} />
-    </Products.Provider>
+    </Cart.Provider>
   )
 }
 
