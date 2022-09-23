@@ -31,6 +31,16 @@ export default function Home() {
       </Head>
       <div className={`${styles.body}`}>
         <Header/>
+        <div className={`${styles.options} `}>
+          <div className={`${styles.input_container} form-check form-check-inline`}>
+            <input type="checkbox" id="fitment" className={`form-check-input`} />
+            <label htmlFor="fitment" className={`form-check-label`}>Móveis</label>
+          </div>
+          <div className={`${styles.input_container} form-check form-check-inline`}>
+            <input type="checkbox" id="eletronics" className={`form-check-input`} />
+            <label htmlFor="eletronics" className={`form-check-label`}>Eletrônicos</label>
+          </div>
+        </div>
         <main className={`${styles.content} d-flex justify-content-center`}>
           <div className={`${styles.products_container} d-flex justify-content-center col-11 gap-3 row row-cols-md-2 row-cols-lg-3`}>
             {data.map(product => (
