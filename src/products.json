@@ -2,126 +2,126 @@
     {
       "name": "Mesa",
       "price": 100,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "mesa.jpg",
       "id": "1"
     },
     {
       "name": "Cama",
       "price": 89.98,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "cama.jpg",
       "id": "2"
     },
     {
       "name": "Televisão",
       "price": 979.99,
-      "type": "eletronics",
+      "type": "Eletrônico",
       "img": "tv.jpg",
       "id": "3"
     },
     {
       "name": "Computador",
       "price": 1579.90,
-      "type": "eletronics",
+      "type": "Eletrônico",
       "img": "pc.jpg",
       "id": "4"
     },
     {
       "name": "Criado-mudo",
       "price": 99.99,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "criado-mudo.jpg",
       "id": "5"
     },
     {
       "name": "Geladeira",
       "price": 59.99,
-      "type": "eletronics",
+      "type": "Eletrônico",
       "img": "geladeira.jpg",
       "id": "6"
     },
     {
       "name": "Teclado",
       "price": 70.00,
-      "type": "eletronics",
+      "type": "Eletrônico",
       "img": "teclado.jpg",
       "id": "7"
     },
     {
       "name": "Mouse",
       "price": 200.00,
-      "type": "eletronics",
+      "type": "Eletrônico",
       "img": "mouse.jpg",
       "id": "8"
     },
     {
       "name": "Headphone",
       "price": 325.00,
-      "type": "eletronics",
+      "type": "Eletrônico",
       "img": "headphone.jpg",
       "id": "9"
     },
     {
       "name": "Fone de ouvido",
       "price": 30.00,
-      "type": "eletronics",
+      "type": "Eletrônico",
       "img": "fone.png",
       "id": "10"
     },
     {
       "name": "Cadeira",
       "price": 249.95,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "cadeira.jpg",
       "id": "11"
     },
     {
       "name": "Mousepad",
       "price": 10.00,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "mousepad.jpg",
       "id": "12"
     },
     {
       "name": "Sofá",
       "price": 200.10,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "sofa.jpg",
       "id": "13"
     },
     {
       "name": "Poltrona",
       "price": 119.90,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "poltrona.jpg",
       "id": "14"
     },
     {
       "name": "Rack",
       "price": 200.00,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "rack.jpg",
       "id": "15"
     },
     {
       "name": "Pia",
       "price": 100.00,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "pia.jpg",
       "id": "16"
     },
     {
       "name": "Escrivaninha",
       "price": 99.90,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "escrivaninha.jpg",
       "id": "17"
     },
     {
       "name": "Guarda-roupa",
       "price": 259.99,
-      "type": "fitment",
+      "type": "Mobília",
       "img": "guarda-roupa.jpg",
       "id": "18"
     }
