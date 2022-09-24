@@ -3,15 +3,21 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 /* ------------ RESOURCES ------------ */
-import Cart from '../Context/Cart'
 import { useState } from 'react'
+
+/* ------------ CONTEXT ------------ */
+import Cart from '../Context/Cart'
+import Filter from '../Context/Filter'
 
 function MyApp({ Component, pageProps }) {
   const [cart, setCart] = useState([])
+  const [filter, setFilter] = useState([])
 
   return (
     <Cart.Provider value={[cart, setCart]}>
-      <Component {...pageProps} />
+      <Filter.Provider value={[filter, setFilter]}>
+        <Component {...pageProps} />
+      </Filter.Provider>
     </Cart.Provider>
   )
 }

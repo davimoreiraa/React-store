@@ -15,9 +15,11 @@ import { useContext } from "react";
 
 /* ------------ CONTEXT ------------ */
 import Cart from '../../Context/Cart'
+import Filter from '../../Context/Filter'
 
 export default function Home() {
   const [cart, setCart] = useContext(Cart);
+  const [filter, setFilter] = useContext(Filter);
   
   function pushProduct(product) {
     if(cart.includes(product) == true) return
