@@ -22,7 +22,6 @@ export default function CartBox({ showCart }) {
     let price = 0
     cart.forEach(product => {
       price += product.price
-      console.log(product.price)
     })
     setTotalPrice(price)
   }
@@ -31,6 +30,7 @@ export default function CartBox({ showCart }) {
     let newCartArray = [...cart]
     let searchCart = newCartArray.findIndex(product => {
       return product.id === id
+      // me retorna o index do product q possui a msm id passada no parametro da funcao
     })
     newCartArray.splice(searchCart, 1)
     setCart(newCartArray)

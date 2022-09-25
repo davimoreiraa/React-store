@@ -26,6 +26,18 @@ export default function Home() {
     setCart([...cart, product])
   }
 
+  function handleToogleCategorie(categorie) {
+    if(filter.includes(categorie) == true) {
+      let newFilterArray = [...filter]
+      let searchCategorie = newFilterArray.findIndex(categorie => {
+        return categorie == categorie 
+      })
+      newFilterArray.splice(searchCategorie, 1)
+      setFilter(newFilterArray)
+    }
+    else setFilter([...filter, categorie])
+  }
+
   return (
     <div>
       <Head>
@@ -35,11 +47,19 @@ export default function Home() {
         <Header/>
         <div className={`${styles.options} `}>
           <div className={`${styles.input_container} form-check form-check-inline`}>
-            <input type="checkbox" id="fitment" className={`form-check-input`} />
-            <label htmlFor="fitment" className={`form-check-label`}>Móveis</label>
+            <input 
+             type="checkbox" 
+             id="mobilia"
+             className={`form-check-input`} 
+             onChange={() => handleToogleCategorie('Mobília')}/>
+            <label htmlFor="mobilia" className={`form-check-label`}>Móveis</label>
           </div>
           <div className={`${styles.input_container} form-check form-check-inline`}>
-            <input type="checkbox" id="eletronics" className={`form-check-input`} />
+            <input
+             type="checkbox"
+             id="eletronics"
+             className={`form-check-input`} 
+             onChange={() => handleToogleCategorie('Eletrônico')}/>
             <label htmlFor="eletronics" className={`form-check-label`}>Eletrônicos</label>
           </div>
         </div>
