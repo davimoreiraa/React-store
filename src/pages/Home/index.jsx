@@ -11,7 +11,7 @@ import Head from 'next/head'
 import data from '../../products.json';
 
 /* ------------ RESOURCES ------------ */
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 
 /* ------------ CONTEXT ------------ */
 import Cart from '../../Context/Cart'
@@ -20,7 +20,12 @@ import Filter from '../../Context/Filter'
 export default function Home() {
   const [cart, setCart] = useContext(Cart);
   const [filter, setFilter] = useContext(Filter);
+  const [productsToBeReder, setProductsToBeReder] = useState([]);
   
+  useEffect(() => {
+		renderProductsCard()
+	}, [filter])
+
   function pushProduct(product) {
     if(cart.includes(product) == true) return
     setCart([...cart, product])
@@ -36,6 +41,16 @@ export default function Home() {
       setFilter(newFilterArray)
     }
     else setFilter([...filter, categorie])
+  }
+
+  function renderProductsCard() {
+    const newArray = []
+    data.forEach(function (element) {
+      if(filter.includes(element.type)) {
+        newArray.push(element)
+        setProductsToBeReder(newArray)
+      }
+    })
   }
 
   return (
@@ -65,7 +80,7 @@ export default function Home() {
         </div>
         <main className={`${styles.content} d-flex justify-content-center`}>
           <div className={`${styles.products_container} d-flex justify-content-center col-11 gap-3 row row-cols-md-2 row-cols-lg-3`}>
-            {data.map(product => (
+            {productsToBeReder.map(product => (
               <ProductCard 
               key={product.id} 
               product={product}
