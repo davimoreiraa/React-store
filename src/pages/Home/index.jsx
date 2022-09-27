@@ -44,12 +44,13 @@ export default function Home() {
   }
 
   function renderProductsCard() {
-    const newArray = []
+    let newArray = []
     data.forEach(function (element) {
+      console.log(newArray)
       if(filter.includes(element.type)) {
         newArray.push(element)
-        setProductsToBeReder(newArray)
       }
+      setProductsToBeReder(newArray)
     })
   }
 
@@ -89,8 +90,8 @@ export default function Home() {
             ))}
           </div>
         </main>
-        <Footer />
       </div>
+      <Footer />
     </div>    
   )
 }
