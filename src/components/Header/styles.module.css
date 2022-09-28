@@ -16,16 +16,22 @@
 }
 
 .cart_btn {
-  background-color: var(--dark-blue) ;
   color: #000;
+  background-color: transparent;
   width: 90px !important;
   height: 50px;
   border: transparent;
   width: 70px;
+  transition: 0.5s all;
+}
+
+.cart_btn:hover {
+  background-color: var(--dark-blue) ;
+  
 }
 
 .enabled {
-  background-color: #000;
+  background-color: var(--dark-blue) ;
 }
 
 .btn_text {
