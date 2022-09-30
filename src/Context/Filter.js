@@ -1,5 +1,5 @@
 import { createContext } from 'react'
 
-const Filter = createContext(['Mobília', 'Eletrônico'])
+const Filter = createContext([])
 
 export default Filter

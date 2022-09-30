@@ -32,8 +32,8 @@ export default function Home() {
   }
 
   function handleToogleCategorie(categorie) {
+    let newFilterArray = [...filter]
     if(filter.includes(categorie) == true) {
-      let newFilterArray = [...filter]
       let searchCategorie = newFilterArray.findIndex(categorie => {
         return categorie == categorie 
       })
@@ -46,7 +46,6 @@ export default function Home() {
   function renderProductsCard() {
     let newArray = []
     data.forEach(function (element) {
-      console.log(newArray)
       if(filter.includes(element.type)) {
         newArray.push(element)
       }
