@@ -119,10 +119,59 @@
       "id": "17"
     },
     {
-      "name": "Guarda-roupa",
-      "price": 259.99,
-      "type": "Mobília",
-      "img": "guarda-roupa.jpg",
+      "name": "Anel",
+      "price": 25.90,
+      "type": "Joalheria",
+      "img": "anel.jpg",
+      "id": "19"
+    },
+    {
+      "name": "Argola Chaveiro",
+      "price": 2.00,
+      "type": "Joalheria",
+      "img": "argola-chaveiro.jpg",
+      "id": "20"
+    },
+    {
+      "name": "Bermuda",
+      "price": 90.99,
+      "type": "Roupa",
+      "img": "bermuda.jpg",
+      "id": "21"
+    },
+    {
+      "name": "Camisa",
+      "price": 39.00,
+      "type": "Roupa",
+      "img": "camisa.jpg",
+      "id": "22"
+    },
+    {
+      "name": "Cordão prata",
+      "price": 10.00,
+      "type": "Joalheria",
+      "img": "corda-prata.jpg",
+      "id": "23"
+    },
+    {
+      "name": "Cordão",
+      "price": 20.00,
+      "type": "Joalheria",
+      "img": "cordao.jpg",
+      "id": "24"
+    },
+    {
+      "name": "Moletom",
+      "price": 150.90,
+      "type": "Roupa",
+      "img": "moletom.jpg",
+      "id": "25"
+    },
+    {
+      "name": "Piercing",
+      "price": 9.98,
+      "type": "Joalheria",
+      "img": "piercing.jpg",
       "id": "18"
     }
   ]
