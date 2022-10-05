@@ -2,10 +2,8 @@
   background-color: var(--grey);
 }
 
-.product_img {
-  width: 140px;
-  height: 140px;
-  margin-top: 20px;
+.img_container {
+  padding-top: 20px;
 }
 
 .infos {

@@ -2,6 +2,7 @@
 import styles from './styles.module.css'
 
 /* ------------ COMPONENTS ------------ */
+import Image from 'next/Image'
 import CartButton from '../CartButton'
 
 export default function ProductCard({product, pushProduct}) {
@@ -9,7 +10,7 @@ export default function ProductCard({product, pushProduct}) {
     <article className={`${styles.card} col-12 col-sm-8 col-md-5 col-xxl-3 rounded-3`}>
       <div className={`d-flex justify-content-center`}>
           <div className={`${styles.img_container} d-flex justify-content-center`}>
-            <img src={`../../../images/${product.img}`} className={styles.product_img}/>
+            <Image src={`/images/${product.img}`} width={140} height={140}/>
           </div>
         </div>
         <div className={`d-flex justify-content-between`}>
