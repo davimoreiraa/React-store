@@ -28,14 +28,14 @@
 <hr/>
 <h2>Como rodar na sua máquina</h2>
 <h3 style='font-size:16px'>Pré-requisitos:</h3>
-<p style='font-size:16px'>Para rodar o projeto, é preciso que você tenha as ferramentas <a href='https://git-scm.com/'>Git</a> e <a href='https://nodejs.org/en/'>Node.js</a>. Além de também ser interessante um editor de código, como o <a href='https://code.visualstudio.com/'>VsCode</a>. </p>
+<p style='font-size:16px'>Para rodar o projeto, é preciso que você tenha as ferramentas <a href='https://git-scm.com/'>Git</a> e <a href='https://nodejs.org/en/'>Node.js</a>. Além de também ser interessante um editor de código, como o <a href='https://code.visualstudio.com/'>VsCode</a>.</p>
 
 ```bash
 #Clone este repositório
-git clone https://github.com/davimoreiraa/Adopet.git
+git clone https://github.com/davimoreiraa/React-store.git
 
 #Acesse a pasta usando o terminal
-cd adopet
+cd react-store
 
 #Instale as depedências
 npm install
