@@ -109,7 +109,9 @@ export default function Home() {
           </div>
         </main>
       <div className={`${styles.arrow_container} d-inline-flex rounded-3`}>
-        <AiOutlineArrowUp />
+        <button className={`${styles.up_btn}`}>
+          <AiOutlineArrowUp />
+        </button>
       </div>
       </div>
       <Footer />
