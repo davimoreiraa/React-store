@@ -7,6 +7,9 @@ import Footer from '../../components/Footer'
 import ProductCard from '../../components/ProductCard';
 import Head from 'next/head'
 
+/* ------------ ICONS ------------ */
+import { AiOutlineArrowUp } from 'react-icons/ai';
+
 /* ------------ DATA ------------ */
 import data from '../../products.json';
 
@@ -105,6 +108,9 @@ export default function Home() {
             ))}
           </div>
         </main>
+      <div className={`${styles.arrow_container} d-inline-flex rounded-3`}>
+        <AiOutlineArrowUp />
+      </div>
       </div>
       <Footer />
     </div>    
