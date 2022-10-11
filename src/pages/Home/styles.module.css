@@ -15,5 +15,7 @@
 }
 
 .arrow_container {
-  background-color: white;
+  background-color: #fff;
+  bottom: 1em;
+  right: 1em;
 }
