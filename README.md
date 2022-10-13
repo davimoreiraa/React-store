@@ -24,7 +24,7 @@
 </div>
 <hr/>
 <h2>Publicação</h2>
-<p align='center' style='font-size:17px'>Ainda em desenvolvimento.</p>
+<p align='center' style='font-size:17px'>Ainda em desenvolvimento.</p> 
 <hr/>
 <h2>Como rodar na sua máquina</h2>
 <h3 style='font-size:16px'>Pré-requisitos:</h3>
