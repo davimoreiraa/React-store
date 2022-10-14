@@ -61,7 +61,7 @@ export default function Home() {
       <Head>
         <title>React Store</title>
       </Head>
-      <div className={`${styles.body}`}>
+      <div className={`${styles.body}`} id='top'>
         <Header/>
         <div className={`${styles.options} `}>
           <div className={`${styles.input_container} form-check form-check-inline`}>
@@ -109,10 +109,10 @@ export default function Home() {
           </div>
         </main>
         <div className={`d-flex justify-content-end`}>
-          <div className={`${styles.arrow_container} position-absolute d-inline-flex  rounded-3`}>
-            <button className={`${styles.up_btn}`}>
+          <div className={`${styles.arrow_container} position-fixed d-inline-flex  rounded-3`}>
+            <a className={`${styles.up_btn}`} href='#top'>
               <AiOutlineArrowUp />
-            </button>
+            </a>
           </div>
         </div>
       </div>
