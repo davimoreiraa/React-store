@@ -1,7 +1,7 @@
 <h1>React Store  🛍️ </h1>
 <hr />
 <h2>Descrição</h2>
-<p style='font-size:16px'>Projeto individual desenvolvido por mim mesmo afim de compor meu repositório, mostrando features e conhecimento sobre ferramentas.</p>
+<p style='font-size:16px'>Projeto individual para compor meu repositório, com foco em demonstração features e conhecimento sobre ferramentas, principalmente no framework React.</p>
 <hr />
 <h2>Frameworks e bibliotecas:</h2>
 <ul style='font-size:17px'>
