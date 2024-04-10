@@ -23,9 +23,6 @@
   <img width='30%' src='public/readme-media/mobile.gif' alt='Gif showing the page in mobile mode'/>
 </div>
 <hr/>
-<h2>Publicação</h2>
-<p align='center' style='font-size:17px'>Ainda em desenvolvimento.</p> 
-<hr/>
 <h2>Como rodar na sua máquina</h2>
 <h3 style='font-size:16px'>Pré-requisitos:</h3>
 <p style='font-size:16px'>Para rodar o projeto, é preciso que você tenha as ferramentas <a href='https://git-scm.com/'>Git</a> e <a href='https://nodejs.org/en/'>Node.js</a>. Além de também ser interessante um editor de código, como o <a href='https://code.visualstudio.com/'>VsCode</a>.</p>
